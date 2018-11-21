@@ -49,5 +49,5 @@ if __name__ == '__main__':
 	for sensor in sensors:
 		print("\t[%d] %s"%(sensors.index(sensor), sensor.replace("/dev/tty.AffectivaQ-v2-","").replace("-SPP","")))
 	s1 = int(input("Type the number of the sensor you want to use: " ))
-	main(port)
+	main(sensors[s1])
 	
